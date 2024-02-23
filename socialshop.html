@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Social Shop</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/socialshop.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li><a href="index.html"><img src="images/logo.png" alt="home page" width="120" height="40" /></a></li>
+                        <!-- CLICK HERE here to go to home page. -->
+                        <li><input type="search" placeholder="Search" size="10"></li>
+                        <li><a href="link.html"><img src="images/logo02.png" alt="Logo" width="40" height="20" /></a></li>
+                        <!-- CLICK HERE here to go to the shared space for shopping. -->
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="#">Men</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="groupcart.html"><img src="images/cart.png" alt="pcart" width="30" height="30" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/user.png" alt="pcart" width="30" height="30" /></a>
+                            <ul class="menu vertical">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell large-4 medium-4 small-2"></div>
+            <div class="cell small-8">
+                <div class="shopping-together">
+                    <b>5 Joined. Shopping Together</b> <!-- Displaying number of people shopping together -->
+                </div>
+            </div>
+            <div class="cell large-4 medium-4 small-2"></div>
+        </div>
+    </div>
+   
+    <!-- New Arrivals, Product display in card form-->
+    <section class="grid-container fluid">
+        <h1>New Arrivals</h1>
+        <section class="grid-x card-container">
+            <div class="card">
+                <img src="images/product1.jpg" alt="1" width="300" height="400" />
+                <div class="card-info">Product 1</div>
+            </div>
+            <div class="card">
+                <img src="images/product2.jpg" alt="2" width="300" height="400" />
+                <div class="card-info">Product 2</div>
+            </div>
+            <div class="card">
+                <img src="images/product3.jpg" alt="3" width="300" height="400" />
+                <div class="card-info">Product 3</div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Sale, Product display in card form-->
+    <section class="grid-container fluid">
+        <h1>On Sale</h1>
+        <section class="grid-x card-container">
+            <!-- DETOUR HERE. MORE DETAILS ABOUT THE PRODUCT-->
+            <div class="card">
+                <a href="viewProduct.html"><img src="images/product4.jpg" alt="4" width="300" height="400" /></a>
+                <div class="card-info">Product 4</div>
+            </div>
+            <div class="card">
+                <img src="images/product9.jpg" alt="5" width="300" height="400" />
+                <div class="card-info">Product 5</div>
+            </div>
+            <div class="card">
+                <img src="images/product6.jpg" alt="6" width="300" height="400" />
+                <div class="card-info">Product 6</div>
+            </div>
+        </section>
+    </section>
+
+<!-- Main 
+Select the product, adjust the quantity, and add it to group cart.
+and view the group cart--> 
+
+  <main>
+     <section>
+        <h1>Group Cart</h1>
+            <div class="product">
+                <div class="product-image">
+                    <div class="row">   
+                    <img  src="images/product2.jpg" alt="Product Image">
+                </div>
+                <div class="details">
+                    <h2>Product Name</h2>
+                    <p>Description of the product goes here.</p>
+                    <div class="quantity">
+                        <span>Quantity:</span>
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div>
+                <div class="actions">
+                    <a href="" class="centered-button">
+                    <button class="add-cart">Add to Group Cart</button></a>
+                    
+                    <a href="groupcart.html" class="centered-button">
+                     <button class="view-group-cart">View Group Cart</button> </a> <!-- CLICK HERE. View Group Cart-->
+                   
+                </div>
+                
+            </div>
+     </section>
+  </main>
+
+   <!-- Chat box:
+    The chat function has been changed and adjusted, and a chat button suspended in the lower 
+    right corner of the page has been designed, which can open the friend chat list to facilitate 
+    timely communication and sharing.-->
+  <section class="chat-section">
+    <input type="checkbox" id="chatToggle" class="chat-toggle-checkbox">
+    <!-- Chat toggle button -->
+    <label for="chatToggle" class="chat-toggle-btn chat-toggle-label">Chat & Share</label>
+    <!-- Chat container -->
+    <div class="chat-container">
+        <!-- Chat header -->
+        <div class="chat-header">
+            Friend List
+        </div>
+
+        <!-- Chat body -->
+        <div class="chat-body">
+            <!-- Friend list -->
+            <ul class="friend-list">
+                <!-- Friend list items -->
+                <li class="friend-list-item">
+                    <input type="checkbox" id="friend1" class="friend-checkbox">
+                    <label for="friend1">Friend 1</label>
+                </li>
+                <li class="friend-list-item">
+                    <input type="checkbox" id="friend2" class="friend-checkbox">
+                    <label for="friend2">Friend 2</label>
+                </li>
+                <li class="friend-list-item">
+                    <input type="checkbox" id="friend3" class="friend-checkbox">
+                    <label for="friend3">Friend 3</label>
+                </li>
+                <!-- Add more friends as needed -->
+            </ul>
+        </div>
+
+        <!-- Chat footer -->
+        <div class="chat-footer">
+            <!-- Chat input -->
+            <input type="text" class="chat-input" placeholder="Type your message">
+
+            <!-- Send button -->
+            <button class="chat-send">Send</button>
+        </div>
+    </div> <!-- End of Chat container -->
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="left-column">
+            <h3>Location</h3>
+            <img src="images/map.PNG" alt="maps" height="500" width="500" /> 
+        </div>
+        <div class="right-column">
+            <p>Blogs</p>
+            <p>Career</p>
+            <p>About Us</p>
+            <p>Contact Us</p>  
+        </div>
+    </div>
+</footer>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

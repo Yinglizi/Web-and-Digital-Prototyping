@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Social Shop</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li><a href="index.html"><img src="images/logo.png" alt="home page" width="120" height="40" /></a></li>
+                        <!-- CLICK HERE here to go to home page. -->
+                        <li><input type="search" placeholder="Search" size="10"></li>
+                        <li><a href="link.html"><img src="images/logo02.png" alt="Logo" width="40" height="20" /></a></li>
+                        <!-- CLICK HERE here to go to the shared space for shopping. -->
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="#">Men</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="groupcart.html"><img src="images/cart.png" alt="pcart" width="30" height="30" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/user.png" alt="pcart" width="30" height="30" /></a>
+                            <ul class="menu vertical">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="grid-x grid-padding-x">
+        <div class="cell large-12 medium-12 small-12">
+            <h2>Checkout and Payment</h2>
+        </div>
+    </section>
+    <form class="grid-x grid-padding-x">
+        <section class="cell large-8 medium-8 small-12">
+            <h3>Shipping Address</h3>
+            </div>
+            <section class="grid-x grid-padding-x section-with-background">
+                <div class="cell large-6 medium-6 small-12"><label>First Name</label><input type="text"
+                        placeholder="First Name" /></div>
+                <div class="cell large-6 medium-6 small-12"><label>Last Name</label><input type="text"
+                        placeholder="Last Name" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>Phone Number</label><input type="text"
+                        placeholder="Phone Number" /></div>
+                <div class="cell large-8 medium-8 small-12"><label>Address</label><input type="text"
+                        placeholder="Address" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>City</label><input type="text" placeholder="City" />
+                </div>
+                <div class="cell large-4 medium-4 small-12"><label>Province</label><input type="text"
+                        placeholder="Province" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>Postal Code</label><input type="text"
+                        placeholder="Postal Code" /></div>
+            </section>
+            
+            <div><input id="checkbox1" type="checkbox"><label for="checkbox1">Same as Billing Address</label></div>
+            <div>
+                <h3>Payment</h3>
+            </div>
+            <section class="grid-x grid-padding-x section-with-background">
+                <div class="cell large-12 medium-12 small-12"><label>Card Number</label><input type="text"
+                        placeholder="Card Number" /></div>
+                <div class="cell large-5 medium-5 small-12"><label>Expiry Month</label><input type="text"
+                        placeholder="Expiry Month" /></div>
+                <div class="cell large-5 medium-5 small-12"><label>Expiry Year</label><input type="text"
+                        placeholder="Expiry Year" /></div>
+                <div class="cell large-2 medium-2 small-12"><label>CVV</label><input type="text" placeholder="CVV" />
+                </div>
+            </section>
+            <div>
+                <h3>Biling Address</h3>
+            </div>
+            <section class="grid-x grid-padding-x section-with-background">
+                <div class="cell large-6 medium-6 small-12"><label>First Name</label><input type="text"
+                        placeholder="First Name" /></div>
+                <div class="cell large-6 medium-6 small-12"><label>Last Name</label><input type="text"
+                        placeholder="Last Name" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>Phone Number</label><input type="text"
+                        placeholder="Phone Number" /></div>
+                <div class="cell large-8 medium-8 small-12"><label>Address</label><input type="text"
+                        placeholder="Address" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>City</label><input type="text" placeholder="City" />
+                </div>
+                <div class="cell large-4 medium-4 small-12"><label>Province</label><input type="text"
+                        placeholder="Province" /></div>
+                <div class="cell large-4 medium-4 small-12"><label>Postal Code</label><input type="text"
+                        placeholder="Postal Code" /></div>
+            </section>
+            <div><input id="checkbox1" type="checkbox"><label for="checkbox1">Same as Shipping Address</label></div>
+        </section>
+        <section class="cell large-4 medium-4">
+            <h3>Order Summary</h3>
+            <section class="grid-x grid-padding-x section-with-background">
+                <div class="cell large-8 medium-7 small-8">Product Subtotal:</div>
+                <div class="cell large-4 medium-5 small-4"></div>
+                <div class="cell large-8 medium-7 small-8">Order Discounts:</div>
+                <div class="cell large-4 medium-5 small-4"></div>
+                <div class="cell large-8 medium-7 small-8">Estimated Shipping:</div>
+                <div class="cell large-4 medium-5 small-4"></div>
+                <div class="cell large-8 medium-7 small-8">Estimated Taxes:</div>
+                <div class="cell large-4 medium-5 small-4"></div>
+                <div class="cell large-8 medium-7 small-8">Estimated Total:</div>
+                <div class="cell large-4 medium-5 small-4"></div>
+            </section>
+            
+        <section>
+            <a href="#" class="centered-button">  
+            <button type="button">Place Order</button>
+            </a>
+        </section>
+        
+        
+        <div class="centered-container">
+            <section class="grid-x">
+                <div class="small-2"> <img src="images/lock.png" height="30px" width="30px"> </div>
+                <div class="small-10">Security & Privacy</div>
+            </section>
+            <section>
+                <div class="small-12">Every transaction on TheSocialShop.ca is secure. Any personal information you give us will be handled according to our Privacy Policy.</div>
+            </section>
+        </div>
+        
+
+        </section>
+    </form>
+
+
+
+    <!-- Chatbox-->
+    <section class="chat-section">
+        <!-- Checkbox for toggling chat container -->
+        <input type="checkbox" id="chatToggle" class="chat-toggle-checkbox">
+    
+        <!-- Chat toggle button -->
+        <label for="chatToggle" class="chat-toggle-btn chat-toggle-label">Chat & Share</label>
+    
+        <!-- Chat container -->
+        <div class="chat-container">
+            <!-- Chat header -->
+            <div class="chat-header">
+                Friend List
+            </div>
+    
+            <!-- Chat body -->
+            <div class="chat-body">
+                <!-- Friend list -->
+                <ul class="friend-list">
+                    <!-- Friend list items -->
+                    <li class="friend-list-item">
+                        <input type="checkbox" id="friend1" class="friend-checkbox">
+                        <label for="friend1">Friend 1</label>
+                    </li>
+                    <li class="friend-list-item">
+                        <input type="checkbox" id="friend2" class="friend-checkbox">
+                        <label for="friend2">Friend 2</label>
+                    </li>
+                    <li class="friend-list-item">
+                        <input type="checkbox" id="friend3" class="friend-checkbox">
+                        <label for="friend3">Friend 3</label>
+                    </li>
+                    <!-- Add more friends as needed -->
+                </ul>
+            </div>
+    
+            <!-- Chat footer -->
+            <div class="chat-footer">
+                <!-- Chat input -->
+                <input type="text" class="chat-input" placeholder="Type your message">
+    
+                <!-- Send button -->
+                <button class="chat-send">Send</button>
+            </div>
+        </div> <!-- End of Chat container -->
+    </section>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-content">
+        <div class="left-column">
+            <h3>Location</h3>
+            <img src="images/map.PNG" alt="maps" height="500" width="500" /> 
+        </div>
+        <div class="right-column">
+            <p>Blogs</p>
+            <p>Career</p>
+            <p>About Us</p>
+            <p>Contact Us</p>  
+        </div>
+    </div>
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
